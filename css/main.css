@@ -1,0 +1,250 @@
+.header-section {
+	margin-top: 50px;
+}
+
+.logo {
+	border: 4px solid #9a1c50;
+	font-weight: 700;
+	color: #9a1c50;
+	padding: 10px 20px;
+}
+
+.sub-logo {
+	margin-left: 20px;
+}
+
+@media (max-width: 400px) {
+	.sub-logo {
+		display: none;
+	}
+}
+
+
+/* 
+	Menu class 
+	==========
+*/
+
+.masthead {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  background: green;
+}
+
+.side-nav {
+	text-align: right;
+	font-weight: 700;
+	margin-top: 50px;
+}
+
+.side-nav p {
+	margin-bottom: 1.5rem;
+}
+
+.side-nav a, .side-nav a:active {
+  text-decoration: none;
+  color: #3e484d;
+}
+
+.side-nav a:hover {
+  text-decoration: underline;
+}
+
+.content-title {
+	margin-top: 50px;
+	color: #8bc5c2;
+	font-size: 51px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	border-bottom: 3px solid #f6e05c;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  word-spacing: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.nav a, .nav a:hover, .nav a:active {
+	color: #3e484d;
+	text-decoration: none;
+
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+}
+
+.mobile-nav-section {
+  margin-top: 15px;
+  display: none;
+}
+
+@media (max-width: 550px){
+  .mobile-nav-section {
+      display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .side-nav {
+    display: none;
+  }
+}
+
+
+
+.icon-bars {
+	color: #8bc5c2;
+	font-weight: 200;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+@media (max-width: 48em) {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav {
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease-out;
+  }
+  
+  .nav li {
+    display: block;
+  }
+  
+  .nav.is-active {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: inherit;
+    max-height: 1000px;
+    text-align: right;
+    z-index: 10;
+  }
+  
+  .nav-is-active .overlay {
+    z-index: 5;
+    opacity: 1;
+  }
+}
+
+
+
+
+/*
+pictures
+========
+*/
+
+#Grid{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+#Grid li{
+  display: inline-block;
+  background: #eee;
+  width: 31%;
+ /* padding-top: 31%;*/ /* Used instead of height to give elements fluid, width-based height */
+  margin-bottom: 3%;
+}
+
+#Grid li img {
+  width: 100%;
+}
+
+#Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  /*border-top: 10px dashed #922d8d;*/ /* Border added to make element visible for demonstration purposes */
+}
+
+#Grid .placeholder{
+  padding: 0;
+  border-top: 0 solid #fff; /* Border added to make element visible for demonstration purposes */
+}
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    /*padding-top: 31%;*/
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 768px){
+  #Grid li{
+    width: 48%;
+    /*padding-top: 48%;*/
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-width: 550px){
+  #Grid {
+    margin-top: 0;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+   /* padding-top: 100%;*/
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 400px){
+  .nav.is-active {
+    margin-right: 20px;
+  }
+}
+
+.bottom-line {
+  margin-top: 50px;
+  color: #8bc5c2;
+  font-size: 51px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-top: 3px solid #f6e05c;
+}
+
+.external-links {
+  color: #121212;
+  font-size: 14px;
+}
