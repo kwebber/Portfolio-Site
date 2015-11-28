@@ -13,6 +13,12 @@
 	margin-left: 20px;
 }
 
+.footer-location {
+  margin-left: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
 @media (max-width: 400px) {
 	.sub-logo {
 		display: none;
@@ -69,10 +75,14 @@
   letter-spacing: 0.1em;
 }
 
-.nav a, .nav a:hover, .nav a:active {
+.nav a, .nav a:hover, a:active {
 	color: #3e484d;
 	text-decoration: none;
+}
 
+.nav a.current:link, a:focus {
+  color: #3e484d;
+  border-bottom: 3px solid #f6e05c;
 }
 
 .nav li {
@@ -152,6 +162,49 @@
   }
 }
 
+.project-title {
+  color: #8bc5c2;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.about-text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tool-text {
+  color: #9a1c50;
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.about-tool-text {
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+.about-tool-text-list {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+}
+
+
+ul.about-tool-text-list {
+    list-style-type: square;
+}
+
+ul li.about-tool-text {
+  color: #f6e05c;
+}
+
+
 
 
 
@@ -177,6 +230,13 @@ pictures
 
 #Grid li img {
   width: 100%;
+}
+
+#Grid li img:hover {
+  outline: 4px solid #9a1c50;
+  outline-offset: -4px;
+  opacity: 0.6;
+  filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 
 #Grid:after{
@@ -235,16 +295,25 @@ pictures
   }
 }
 
-.bottom-line {
-  margin-top: 50px;
-  color: #8bc5c2;
-  font-size: 51px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  border-top: 3px solid #f6e05c;
+.footer-section {
+  margin-top: 25px;
 }
 
-.external-links {
-  color: #121212;
-  font-size: 14px;
+.bottom-line {
+  margin-top: 50px;
+  border-top: 3px solid #f6e05c;
+  height: 50px;
 }
+
+.external-links a {
+  padding: 0;
+  margin-right: 30px;
+  word-spacing: 100px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #3e484d;
+  text-decoration: none;
+
+}
+
+
