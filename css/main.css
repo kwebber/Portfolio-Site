@@ -80,7 +80,7 @@
 	text-decoration: none;
 }
 
-.nav a.current:link, a:focus {
+.nav a.visited {
   color: #3e484d;
   border-bottom: 3px solid #f6e05c;
 }
