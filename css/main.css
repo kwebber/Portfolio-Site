@@ -316,4 +316,44 @@ pictures
 
 }
 
+/* circular image */
+
+/*.circular {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(http://img/belgrade1.jpg) no-repeat;
+  }
+
+.circular img {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  }*/
+
+
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 300px; 
+    height: 300px; 
+    padding: 10px; 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+  .img-circle {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    /*padding: 50px;*/
+}
 
