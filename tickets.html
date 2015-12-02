@@ -21,6 +21,7 @@
     <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
     <link rel="stylesheet" href="css/vendor/normalize.css">
     <!-- <link rel="stylesheet" href="css/vendor/reset.css"> -->
+    <link rel="stylesheet" href="css/vendor/jquery.bxslider.css" />
 
     <!--
     @NOTE Enable Skeleton's Grid
@@ -55,15 +56,15 @@
         <header class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <span class="logo">Kelly Webber</span> <span class="sub-logo"><em>Graphic Design</em></span>
-                    <nav class="u-pull-right">
-                        <div class="nav-toggle u-pull-right"><i class="nav-toggle icon icon-bars" id="js-nav-toggle"></i></div>
-                        <ul class="nav" id="js-nav-menu">
-                          <li><a href="#">About</a></li>
-                          <li><a href="index.html">Portfolio</a></li>
-                          <li><a href="#">Resume</a></li>
-                        </ul>
-                    </nav>
+                        <span class="logo">Kelly Webber</span><span class="sub-logo"><em>Graphic Design</em></span>
+                        <nav class="u-pull-right">
+                            <div class="nav-toggle u-pull-right"><i class="nav-toggle icon icon-bars" id="js-nav-toggle"></i></div>
+                            <ul class="nav" id="js-nav-menu">
+                              <li><a href="#">About</a></li>
+                              <li><a href="index.html">Portfolio</a></li>
+                              <li><a href="#">Resume</a></li>
+                            </ul>
+                        </nav>
 
                 </div>
             </div>
@@ -94,7 +95,25 @@
                     </select>
                 </div>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="row">
+                <div class="twelve columns slider-spacing">
+                    <ul class="bxslider">
+                      <li><img src="img/slider-tickets-1.jpg" /></li>
+                      <li><img src="img/slider-tickets-2.jpg" /></li>
+                      <li><img src="img/slider-tickets-3.jpg" /></li>
+                      <li><img src="img/slider-tickets-4.jpg" /></li>
+                      <li><img src="img/slider-tickets-5.jpg" /></li>
+                    </ul>
+
+                    <div id="bx-pager">
+                        <a  class="thumb-spacing"data-slide-index="0" href=""><img src="img/thumb-tickets-1.jpg" /></a>
+                        <a  class="thumb-spacing"data-slide-index="0" href=""><img src="img/thumb-tickets-2.jpg" /></a>
+                        <a  class="thumb-spacing"data-slide-index="0" href=""><img src="img/thumb-tickets-3.jpg" /></a>
+                        <a  class="thumb-spacing"data-slide-index="0" href=""><img src="img/thumb-tickets-4.jpg" /></a>
+                        <a  class="thumb-spacing"data-slide-index="0" href=""><img src="img/thumb-tickets-5.jpg" /></a>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="six columns">
                     <span class="project-title">Take a ticket to travel the world.</span><br>
@@ -136,3 +155,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+</html>
