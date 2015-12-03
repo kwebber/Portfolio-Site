@@ -70,6 +70,15 @@ a: .logo-link {
 	border-bottom: 3px solid #f6e05c;
 }
 
+.content-title-home {
+  margin-top: 25px;
+  color: #8bc5c2;
+  font-size: 51px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-bottom: 3px solid #f6e05c;
+}
+
 .nav {
   list-style: none;
   padding: 0;
@@ -103,6 +112,7 @@ a: .logo-link {
   display: none;
 }
 
+
 @media (max-width: 550px){
   .mobile-nav-section {
       display: block;
@@ -115,7 +125,12 @@ a: .logo-link {
   }
 }
 
-
+.nav-drop-down {
+  width:100%;
+  border: 2px solid #9a1c50;
+  border-radius: 5%;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .icon-bars {
 	color: #8bc5c2;
@@ -171,6 +186,7 @@ a: .logo-link {
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
+  margin-top: 50%;
 }
 
 .about-text {
@@ -202,6 +218,30 @@ a: .logo-link {
 ul.about-tool-text-list {
     list-style-image: url('../img/yellow-square.jpg');
 }
+
+@media (max-width: 550px) {
+  .about-tool-text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px){
+  .about-tool-text {
+    padding-left: 0;
+  }
+}
+
+.home-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+li
+{
+  list-style-type: none;
+}
+
+
 
 
 /*ul.about-tool-text-list {
@@ -303,6 +343,12 @@ pictures
   }
 }
 
+.footer-location {
+  margin-left: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
 .footer-section {
   margin-top: 25px;
 }
@@ -321,7 +367,24 @@ pictures
   letter-spacing: 0.1em;
   color: #3e484d;
   text-decoration: none;
+}
 
+ .icon-behance {
+    visibility: hidden;
+  }
+
+@media (max-width: 400px){
+  .footer-location{
+    text-align: center;
+  }
+
+ /* .external-links{
+    display: none;{
+  }*/
+
+  .icon-behance {
+    visibility: visible;
+  }
 }
 
 /* circular image */
@@ -370,6 +433,34 @@ pictures
 }
 
 .thumb-spacing {
-  padding-right: 20px;
+  padding-right: 2%;
 }
+
+.thumb-spacing img {
+  width: 15%;
+}
+
+.bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+  left: 0;
+  margin-bottom: -30px;
+}
+
+@media (max-width: 550px) {
+  .slider-spacing {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+}
+
+/*.bx-viewport {
+  border: none;
+  box-shadow: none;
+}
+
+.bxslider {
+  border: none;
+  box-shadow: none;
+}*/
 
