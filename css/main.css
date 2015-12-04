@@ -58,7 +58,7 @@ a: .logo-link {
 }
 
 .side-nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content-title {
@@ -72,6 +72,7 @@ a: .logo-link {
 
 .content-title-home {
   margin-top: 25px;
+  margin-bottom: 25px;
   color: #8bc5c2;
   font-size: 51px;
   font-weight: 700;
@@ -482,7 +483,7 @@ pictures
   left: 0;
   margin-bottom: -30px;
 }
-
+/*
 @media (max-width: 550px) {
   .slider-spacing {
     margin-top: 0;
@@ -499,6 +500,18 @@ pictures
   line-height: 25px;
 }
 
+@media (max-width: 800px){
+  .bio-text{
+    padding-left: 25px;
+  }
+}
+*/
+
+@media (max-width: 400px){
+  .bio-text {
+    padding-left: 0;
+  }
+}
 /* 
 Resume text styling
 ===================
