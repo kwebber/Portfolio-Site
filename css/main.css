@@ -371,6 +371,10 @@ pictures
   height: 50px;
 }
 
+.external-links {
+  text-align: center;
+}
+
 .external-links a {
   padding: 0;
   margin-right: 30px;
@@ -381,9 +385,12 @@ pictures
   text-decoration: none;
 }
 
+.external-links a:last-child {
+  margin-right: 0;
+}
+
 .external-links span {
   display: none;
-  text-align: center;
 }
 
 @media (min-width: 450px){
@@ -393,7 +400,10 @@ pictures
 
 .external-links .icon {
   display: none;
-  text-align: center;
+}
+
+.external-links {
+  text-align: left;
 }
 }
 
@@ -422,7 +432,7 @@ pictures
     font-size: 30px;
   }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
   .footer-location{
     text-align: center;
   }
