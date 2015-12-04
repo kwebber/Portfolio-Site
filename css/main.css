@@ -346,11 +346,7 @@ pictures
   }
 }
 
-@media (max-width: 401px) {
-  .icon-behance {
-    display: none;
-  }
-}
+
 
 @media (max-width: 400px){
   .nav.is-active {
@@ -388,7 +384,7 @@ pictures
   display: none;
 }
 
-@media (min-width: 400px){
+@media (min-width: 450px){
   .external-links span {
   display: inline-block;
 }
@@ -398,14 +394,27 @@ pictures
 }
 }
 
+
  /*.icon-behance {
     visibility: hidden;
   }*/
 
    .icon-behance {
     display: block;
-    color: pink;
-    font-size: 25px;
+    color: #3e484d;
+    font-size: 50px;
+  }
+
+  .icon-envelope-o{
+    display: block;
+    color: #3e484d;
+    font-size: 50px;
+  }
+
+  .icon-instagram{
+    display: block;
+    color: #3e484d;
+    font-size: 50px;
   }
 
 @media (max-width: 400px){
@@ -521,6 +530,44 @@ h3 {
   line-height: 25px;
   letter-spacing: 0.2px;
   color: #3e484d;
+}
+
+/*portfolio text overlay on hover testing */
+
+.post-preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  background-color: rgba(90, 90, 90, .8);
+}
+
+.post-preview-content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.post-preview-content p {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.post-preview-content p.post-preview-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-family: GriffithGothic, Helvetica, Georgia, sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 
