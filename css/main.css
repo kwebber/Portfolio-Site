@@ -383,6 +383,7 @@ pictures
 
 .external-links span {
   display: none;
+  text-align: center;
 }
 
 @media (min-width: 450px){
@@ -390,8 +391,9 @@ pictures
   display: inline-block;
 }
 
-.external-links .icon{
+.external-links .icon {
   display: none;
+  text-align: center;
 }
 }
 
@@ -400,22 +402,24 @@ pictures
     visibility: hidden;
   }*/
 
+
+
    .icon-behance {
-    display: block;
+    display: inline-block;
     color: #3e484d;
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .icon-envelope-o{
-    display: block;
+    display: inline-block;
     color: #3e484d;
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .icon-instagram{
-    display: block;
+    display: inline-block;
     color: #3e484d;
-    font-size: 50px;
+    font-size: 30px;
   }
 
 @media (max-width: 400px){
@@ -469,6 +473,20 @@ pictures
   margin-top: 50px;
 }
 
+
+/*@media (max-width: 550px){
+  .slider-spacing{
+    margin-top: 5px;
+  }
+}
+*/
+
+@media (max-width: 400px){
+  .slider-spacing {
+    margin-top: 20px;
+  }
+}
+
 .thumb-spacing {
   padding-right: 2%;
 }
@@ -481,7 +499,7 @@ pictures
   border: none;
   box-shadow: none;
   left: 0;
-  margin-bottom: -30px;
+  margin-bottom: -45px;
 }
 /*
 @media (max-width: 550px) {
