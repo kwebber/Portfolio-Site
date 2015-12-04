@@ -1,3 +1,20 @@
+html,
+body { height: 100%; }
+
+body {
+  display: table;
+  width: 100%;
+}
+
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+
+.page-row-expanded { height: 100%; }
+
+
+
 .header-section {
 	margin-top: 50px;
 }
@@ -518,6 +535,7 @@ pictures
     padding-top: 10px;
   }
 }
+*/
 
 .bio-text {
   margin-top: 50px;
@@ -528,12 +546,13 @@ pictures
   line-height: 25px;
 }
 
+
 @media (max-width: 800px){
   .bio-text{
     padding-left: 25px;
   }
 }
-*/
+
 
 @media (max-width: 400px){
   .bio-text {
@@ -545,18 +564,20 @@ Resume text styling
 ===================
 */
 
+
 h1 {
   margin-top: 50px;
-  font-size: 35px;
+  font-size: 30px;
   color: #8bc5c2;
+  font-weight: 700;
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 100px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.2px;
   color: #3e484d;
@@ -564,13 +585,88 @@ h2 {
 
 h3 {
   margin-top: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding-left: 100px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.2px;
   color: #3e484d;
+}
+
+@media (max-width: 800px){
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-left: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
+}
+
+@media (max-width: 550px){
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
+}
+
+@media (max-width: 400px){
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-left: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
 }
 
 /*portfolio text overlay on hover testing */
