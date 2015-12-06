@@ -230,7 +230,7 @@ a: .logo-link {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-
+  letter-spacing: 0.2px;
 }
 
 ul.about-tool-text-list {
@@ -414,6 +414,10 @@ pictures
   .external-links span {
   display: inline-block;
 }
+
+/*.icon {
+  font-size: 30px;
+}*/
 
 .external-links .icon {
   display: none;
@@ -707,14 +711,19 @@ h3 {
   margin-bottom: 15px;
 }
 
+.circle-spacing {
+  margin-bottom: 25px;
+
+}
 
 /*.bx-viewport {
   border: none;
   box-shadow: none;
 }
 
+
 .bxslider {
-  border: none;
-  box-shadow: none;
-}*/
+  margin-bottom: 25px;
+}
+*/
 
