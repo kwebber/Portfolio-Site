@@ -76,6 +76,7 @@ a: .logo-link {
 
 .side-nav a:hover {
   text-decoration: none;
+  color: #8bc5c2;
 }
 
 .content-title {
@@ -166,6 +167,10 @@ a: .logo-link {
   transition: opacity .3s ease-out;
 }
 
+.drop-down-spacing {
+  padding-bottom: 
+}
+
 @media (max-width: 48em) {
   .nav-toggle {
     display: block;
@@ -225,11 +230,11 @@ a: .logo-link {
 }
 
 .about-tool-text-list {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
 }
 
 ul.about-tool-text-list {
@@ -298,7 +303,7 @@ pictures
 }
 
 #Grid a:hover img{
-  opacity: 0.6;
+  opacity: 0.2;
   filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 
@@ -566,7 +571,26 @@ pictures
 Resume text styling
 ===================
 */
+.resume-list {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-left: 100px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #3e484d;
+}
 
+.resume-list ul li {
+  list-style-position: outside;
+  list-style: disc;
+}
+
+.resume-date {
+  padding-left: 100px;
+  margin-top: 5px;
+}
 
 h1 {
   margin-top: 50px;
@@ -600,7 +624,14 @@ h3 {
 @media (max-width: 800px){
 
 .resume-responsive {
+}
 
+.resume-list {
+  padding-left: 50px;
+}
+
+.resume-date {
+  padding-left: 50px;
 }
 
 h2 {
@@ -628,6 +659,14 @@ h3 {
 
 @media (max-width: 550px){
 
+.resume-list {
+  padding-left: 25px;
+}
+
+.resume-date {
+  padding-left: 25px;
+}
+
 h2 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -652,6 +691,14 @@ h3 {
 }
 
 @media (max-width: 400px){
+
+.resume-list {
+  padding-left: 0;
+}
+
+.resume-date {
+  padding-left: 0;
+}
 
 h2 {
   margin-top: 5px;
@@ -719,11 +766,12 @@ h3 {
 }
 
 .chosen-container-single .chosen-single {
-    height: 29px;
+   /* height: 29px;
     border: 3px solid #9a1c50;
     border-radius: 0;
     box-shadow: 0px 0px 3px #FFF inset, 0px 1px 1px rgba(0, 0, 0, 0.1);
-    color: #444;
+    color: #444;*/
+    margin-bottom: 10px;
 }
 
 .overlay-holder {
@@ -731,10 +779,12 @@ h3 {
 }
 
 .overlay-content {
-  font-size: 30px;
-  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #9a1c50;
   left: 0;
-  top: 0;
+  top: 40%;
   position: absolute;
   width: 100%;
   z-index: 2;

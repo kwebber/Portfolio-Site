@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-$('#mobile-select').chosen();
+// $('#mobile-select').chosen();
 
 });
 
